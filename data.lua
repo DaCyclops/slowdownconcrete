@@ -7,7 +7,7 @@ sdc_item.icon = "__slowdownconcrete__/graphics/item-slow-concrete.png"
 sdc_item.place_as_tile = {
   result = "slowdown-concrete-left",
   condition_size = 1,
-  condition = { "water-tile" }
+  condition = {layers={water_tile=true}}
 }
 data.raw.item["slowdown-concrete"] = sdc_item
 -- Slowdown Tile Left
@@ -18,8 +18,7 @@ sdc_tile_left.next_direction = "slowdown-concrete-right"
 sdc_tile_left.minable.result = "slowdown-concrete"
 sdc_tile_left.walking_speed_modifier = 0.7
 sdc_tile_left.vehicle_friction_modifier = 4
-sdc_tile_left.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-left.png"
-sdc_tile_left.variants.material_background.hr_version.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-left-hr.png"
+sdc_tile_left.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-left-hr.png"
 data.raw.tile["slowdown-concrete-left"] = sdc_tile_left
 -- Slowdown Tile Right
 local sdc_tile_right =  util.table.deepcopy(data.raw.tile["hazard-concrete-right"])
@@ -29,18 +28,17 @@ sdc_tile_right.next_direction = "slowdown-concrete-left"
 sdc_tile_right.minable.result = "slowdown-concrete"
 sdc_tile_right.walking_speed_modifier = 0.7
 sdc_tile_right.vehicle_friction_modifier = 4
-sdc_tile_right.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-right.png"
-sdc_tile_right.variants.material_background.hr_version.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-right-hr.png"
+sdc_tile_right.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-right-hr.png"
 data.raw.tile["slowdown-concrete-right"] = sdc_tile_right
 -- Slowdown Recipe
 local sdc_recipe = util.table.deepcopy(data.raw.recipe["hazard-concrete"])
 sdc_recipe.name = "slowdown-concrete"
 sdc_recipe.ingredients = {
-  {"hazard-concrete", 10},
-  {"plastic-bar", 3},
-  {"iron-plate", 1}
+  {type = "item", name = "hazard-concrete", amount = 10},
+  {type = "item", name = "plastic-bar", amount = 3},
+  {type = "item", name = "iron-plate", amount = 1}
 }
-sdc_recipe.result= "slowdown-concrete"
+sdc_recipe.results = {{type="item", name="slowdown-concrete", amount=10}}
 data.raw.recipe["slowdown-concrete"] = sdc_recipe
 
 
@@ -52,7 +50,7 @@ rsdc_item.icon = "__slowdownconcrete__/graphics/item-refined-slow-concrete.png"
 rsdc_item.place_as_tile = {
   result = "refined-slowdown-concrete-left",
   condition_size = 1,
-  condition = { "water-tile" }
+  condition = {layers={water_tile=true}}
 }
 data.raw.item["refined-slowdown-concrete"] = rsdc_item
 -- Refined Slowdown Tile Left
@@ -63,8 +61,7 @@ rsdc_tile_left.next_direction = "refined-slowdown-concrete-right"
 rsdc_tile_left.minable.result = "refined-slowdown-concrete"
 rsdc_tile_left.walking_speed_modifier = 0.5
 rsdc_tile_left.vehicle_friction_modifier = 6
-rsdc_tile_left.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-left.png"
-rsdc_tile_left.variants.material_background.hr_version.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-left-hr.png"
+rsdc_tile_left.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-left-hr.png"
 data.raw.tile["refined-slowdown-concrete-left"] = rsdc_tile_left
 -- Refined Slowdown Tile Right
 local rsdc_tile_right =  util.table.deepcopy(data.raw.tile["refined-hazard-concrete-right"])
@@ -74,18 +71,17 @@ rsdc_tile_right.next_direction = "refined-slowdown-concrete-left"
 rsdc_tile_right.minable.result = "refined-slowdown-concrete"
 rsdc_tile_right.walking_speed_modifier = 0.5
 rsdc_tile_right.vehicle_friction_modifier = 6
-rsdc_tile_right.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-right.png"
-rsdc_tile_right.variants.material_background.hr_version.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-right-hr.png"
+rsdc_tile_right.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-right-hr.png"
 data.raw.tile["refined-slowdown-concrete-right"] = rsdc_tile_right
 -- Refined Slowdown Recipe
 local rsdc_recipe = util.table.deepcopy(data.raw.recipe["refined-hazard-concrete"])
 rsdc_recipe.name = "refined-slowdown-concrete"
 rsdc_recipe.ingredients = {
-  {"refined-hazard-concrete", 10},
-  {"plastic-bar", 3},
-  {"steel-plate", 1}
+  {type = "item", name = "refined-hazard-concrete", amount = 10},
+  {type = "item", name = "plastic-bar", amount = 3},
+  {type = "item", name = "steel-plate", amount = 1}
 }
-rsdc_recipe.result= "refined-slowdown-concrete"
+rsdc_recipe.results = {{type="item", name="refined-slowdown-concrete", amount=10}}
 data.raw.recipe["refined-slowdown-concrete"] = rsdc_recipe
 
 
