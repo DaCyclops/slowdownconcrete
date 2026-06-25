@@ -16,6 +16,7 @@ sdc_tile_left.name = "slowdown-concrete-left"
 sdc_tile_left.order = "a[artificial]-c[tier-3]-e[refined-slowdown-concrete-left]"
 sdc_tile_left.next_direction = "slowdown-concrete-right"
 sdc_tile_left.minable.result = "slowdown-concrete"
+sdc_tile_left.placeable_by = {item = "slowdown-concrete", count = 1}
 sdc_tile_left.walking_speed_modifier = 0.7
 sdc_tile_left.vehicle_friction_modifier = 4
 sdc_tile_left.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-left-hr.png"
@@ -26,6 +27,7 @@ sdc_tile_right.name = "slowdown-concrete-right"
 sdc_tile_right.order = "a[artificial]-c[tier-3]-f[refined-slowdown-concrete-right]"
 sdc_tile_right.next_direction = "slowdown-concrete-left"
 sdc_tile_right.minable.result = "slowdown-concrete"
+sdc_tile_right.placeable_by = {item = "slowdown-concrete", count = 1}
 sdc_tile_right.walking_speed_modifier = 0.7
 sdc_tile_right.vehicle_friction_modifier = 4
 sdc_tile_right.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-slow-concrete-right-hr.png"
@@ -59,6 +61,7 @@ rsdc_tile_left.name = "refined-slowdown-concrete-left"
 rsdc_tile_left.order = "a[artificial]-c[tier-3]-e[refined-slowdown-concrete-left]"
 rsdc_tile_left.next_direction = "refined-slowdown-concrete-right"
 rsdc_tile_left.minable.result = "refined-slowdown-concrete"
+rsdc_tile_left.placeable_by = {item = "refined-slowdown-concrete", count = 1}
 rsdc_tile_left.walking_speed_modifier = 0.5
 rsdc_tile_left.vehicle_friction_modifier = 6
 rsdc_tile_left.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-left-hr.png"
@@ -69,6 +72,7 @@ rsdc_tile_right.name = "refined-slowdown-concrete-right"
 rsdc_tile_right.order = "a[artificial]-c[tier-3]-f[refined-slowdown-concrete-right]"
 rsdc_tile_right.next_direction = "refined-slowdown-concrete-left"
 rsdc_tile_right.minable.result = "refined-slowdown-concrete"
+rsdc_tile_right.placeable_by = {item = "refined-slowdown-concrete", count = 1}
 rsdc_tile_right.walking_speed_modifier = 0.5
 rsdc_tile_right.vehicle_friction_modifier = 6
 rsdc_tile_right.variants.material_background.picture = "__slowdownconcrete__/graphics/tile-refined-slow-concrete-right-hr.png"

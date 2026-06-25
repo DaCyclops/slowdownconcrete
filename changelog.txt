@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 24. 12. 2025
+  Bugfixes:
+    - Fixed that the items could not be Picked or used in Blueprints.
+      Blueprints and placed ghosts will automatically switch to the correct item.
+  Info:
+    - Added Changelog
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 17. 11. 2024
+  Compatibility:
+    - Updated for Factorio 2.0
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 22. 05. 2023
+  Features:
+    - Adds in two new variants of Hazard Concrete that will slow the engineer down.
+  Compatibility:
+    - Initial Version for Factorio 1.1
