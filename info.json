@@ -1,12 +1,12 @@
 {
   "name": "slowdownconcrete",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "title": "Slowdown Concrete",
   "author": "DaCyclops",
   "homepage": "",
   "contact": "dacyclops@dacyclops.com",
   "description": "Lets slow it all down.... \n \n Adds in two new variants of Hazard Concrete that will slow the engineer down.",
-  "factorio_version":"2.0",
+  "factorio_version":"2.1",
   "dependencies": [
   ]
 }
